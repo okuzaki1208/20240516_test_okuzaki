@@ -23,9 +23,13 @@ main {
 }
 
 #contact-timeline {
-    margin-top: 10%;
+    display: flex;
+    align-items: center;
 }
 
+#comment-table {
+    margin-top: 20px; /* 必要に応じて調整 */
+}
 /* 入力フィールドの背景色を設定 */
 input[type="text"], input[type="email"], textarea {
     width: 50%;
@@ -45,4 +49,44 @@ input:valid, textarea:valid {
 /* 入力フィールドがバリデーションに不合格の場合の背景色 */
 input:invalid, textarea:invalid {
     background-color: #ffcccc;
+}
+
+/* グラフィカルなボタンのスタイル */
+.graphical-button {
+    background-color: #3e82c6; /* ボタンの背景色 */
+    border: none; /* ボーダーを削除 */
+    color: white; /* 文字色 */
+    padding: 15px 32px; /* パディング */
+    text-align: center; /* テキストを中央に配置 */
+    text-decoration: none; /* テキスト装飾を削除 */
+    display: inline-block; /* インラインブロック要素にする */
+    font-size: 16px; /* フォントサイズ */
+    margin: 4px 2px; /* マージン */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    border-radius: 8px; /* ボタンの角を丸くする */
+}
+
+/* ホバーエフェクト */
+.graphical-button:hover {
+    background-color: hsl(215, 100%, 75%); /* ホバー時の背景色 */
+}
+
+/* グラフィカルな送信ボタンのスタイル */
+.graphical-submit-button {
+    background-color: #44cf5d; /* ボタンの背景色 */
+    border: none; /* ボーダーを削除 */
+    color: white; /* 文字色 */
+    padding: 15px 32px; /* パディング */
+    text-align: center; /* テキストを中央に配置 */
+    text-decoration: none; /* テキスト装飾を削除 */
+    display: inline-block; /* インラインブロック要素にする */
+    font-size: 16px; /* フォントサイズ */
+    margin: 4px 2px; /* マージン */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    border-radius: 8px; /* ボタンの角を丸くする */
+}
+
+/* ホバーエフェクト */
+.graphical-submit-button:hover {
+    background-color: hsl(119, 67%, 61%); /* ホバー時の背景色 */
 }
