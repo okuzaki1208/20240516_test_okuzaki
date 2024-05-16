@@ -1,4 +1,5 @@
 20240411提出のgitテストリポジトリです。<br>
+php・githubの扱い方や、DBへのデータ登録・取得方法の習熟度を図るものです。<br>
 <br>
 2024/04/12 変更内容  
 index.phpにsubmit_contact.phpの処理を組み込みました。<br>  
@@ -7,8 +8,9 @@ index.phpにsubmit_contact.phpの処理を組み込みました。<br>
 <br>
 <h1>20240516提出のJSON・AJAXテスト</h1>
 20240412マージをベースに改修しました。<br>
+JSON・AJAXを活用し、リロードなしでデータを取得することを目的としています。<br>
 <br>
-<h2>変更点</h2><br>
+<h2>変更内容</h2><br>
 ・ページ読み込み時にコメントを取得していた処理を、取得ボタン押下時に変更しました。<br>
 ・get_comments.phpの追加。<br>
 ・index.php、script.js、style.cssの修正<br>
