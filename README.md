@@ -9,7 +9,7 @@ index.phpにsubmit_contact.phpの処理を組み込みました。<br>
 20240412マージをベースに改修しました。<br>
 <br>
 <h2>変更点</h2><br>
-・ページ読み込み時にコメントを取得していた処理を、取得ボタン押下時に変更しました。
+・ページ読み込み時にコメントを取得していた処理を、取得ボタン押下時に変更しました。<br>
 ・get_comments.phpの追加。<br>
 ・index.php、script.js、style.cssの修正<br>
 ・DB名を変更、sqlファイルの新規追加。<br>
