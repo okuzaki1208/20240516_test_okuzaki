@@ -25,3 +25,29 @@ function validateForm() {
     }
     return true;
 }
+
+
+    function loadComments() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    displayComments(xhr.responseText);
+                } else {
+                    alert('コメントの読み込み中にエラーが発生しました。');
+                }
+            }
+        };
+        xhr.open('GET', 'get_comments.php', true);
+        xhr.send();
+    }
+
+    function displayComments(response) {
+        var comments = JSON.parse(response);
+        var table = "<table><tr><th>名前</th><th>メールアドレス</th><th>コメント</th></tr>";
+        for (var i = 0; i < comments.length; i++) {
+            table += "<tr><td>" + comments[i].name + "</td><td>" + comments[i].email + "</td><td>" + comments[i].message + "</td></tr>";
+        }
+        table += "</table>";
+        document.getElementById("comment-table").innerHTML = table;
+    }
